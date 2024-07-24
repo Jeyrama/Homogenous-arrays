@@ -25,3 +25,19 @@ function filterHomogenous(arrays) {
 }
 
 // or
+
+function filterHomogenous(arrays) {
+  return arrays.filter(arr => isOneType(arr))
+  
+  function isOneType(array) {
+    const count = {}
+    for (const el of array) {
+      if (!count[typeof el]) {
+        count[typeof el] = 1
+      } else {
+        count[typeof el] += 1
+      }
+    }
+    return Object.keys(count).length === 1
+  }
+}
