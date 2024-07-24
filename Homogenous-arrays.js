@@ -16,3 +16,10 @@ Addendum:
 
 
 // Solution
+
+function filterHomogenous(arrays) {
+  return arrays.filter(arr => {
+    if (arr.length && arr.every(elem => typeof elem === 'number'))  return arr 
+    if (arr.length && arr.every(elem => typeof elem === 'string'))  return arr
+  })
+}
