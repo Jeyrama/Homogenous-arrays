@@ -13,3 +13,6 @@ Addendum:
   The resultant arrays should be in the order they were originally in and should not have its values changed.
   No implicit type casting is allowed. A subarray [1, '2'] would be considered illegal and should be filtered out.
 */
+
+
+// Solution
