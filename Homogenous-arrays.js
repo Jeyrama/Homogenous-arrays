@@ -23,3 +23,5 @@ function filterHomogenous(arrays) {
     if (arr.length && arr.every(elem => typeof elem === 'string'))  return arr
   })
 }
+
+// or
